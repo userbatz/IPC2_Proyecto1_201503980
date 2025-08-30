@@ -1,0 +1,14 @@
+digraph G {
+label="Campo agrícola 01 - frecuencias - suelo";
+labelloc=top;
+fontsize=20;
+rankdir=LR;
+node [shape=box, style=rounded];
+subgraph cluster_estaciones { label="Estaciones"; color=lightgrey;
+"e01" [label="e01\nEstacion 01"];
+}
+subgraph cluster_suelo { label="Sensores de Suelo"; color=lightblue;
+"s01" [label="s01\nSensor S01"];
+}
+"e01" -> "s01" [label="700"];
+}
